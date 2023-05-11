@@ -55,6 +55,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3814281370629789771
 GameObject:
   m_ObjectHideFlags: 0
@@ -81,7 +82,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3814281370629789771}
   m_LocalRotation: {x: 1, y: -1.2128229e-14, z: 0.0000005205485, w: 0.0000000754979}
-  m_LocalPosition: {x: 0.016610172, y: -4.5387883, z: 8.903565}
+  m_LocalPosition: {x: 0.02, y: -4.53, z: 8.9}
   m_LocalScale: {x: 5.669465, y: 5.669465, z: 5.669465}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -852,6 +853,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &8346402309503917753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,6 +885,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4723804473311594392}
+  - component: {fileID: 6078054869905253442}
+  - component: {fileID: 8581089716198794626}
   m_Layer: 0
   m_Name: TurretParent
   m_TagString: Untagged
@@ -906,6 +910,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &6078054869905253442
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9191655272038681680}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &8581089716198794626
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9191655272038681680}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2380393, y: 2.2938771, z: 1.8838058}
+  m_Center: {x: 0.0009537935, y: 0.6469387, z: 0.006883621}
 --- !u!1001 &8346402308229628610
 PrefabInstance:
   m_ObjectHideFlags: 0
