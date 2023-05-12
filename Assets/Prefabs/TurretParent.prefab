@@ -887,6 +887,7 @@ GameObject:
   - component: {fileID: 4723804473311594392}
   - component: {fileID: 6078054869905253442}
   - component: {fileID: 8581089716198794626}
+  - component: {fileID: 351765857989331097}
   m_Layer: 0
   m_Name: TurretParent
   m_TagString: Untagged
@@ -939,6 +940,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.2380393, y: 2.2938771, z: 1.8838058}
   m_Center: {x: 0.0009537935, y: 0.6469387, z: 0.006883621}
+--- !u!64 &351765857989331097
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9191655272038681680}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -613200878065603006, guid: ca776b9350557684886a992dd9e5cc6c, type: 3}
 --- !u!1001 &8346402308229628610
 PrefabInstance:
   m_ObjectHideFlags: 0

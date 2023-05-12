@@ -35,6 +35,9 @@ public class Turret : MonoBehaviour
     {
         _timeSinceLastShot = 0;
         _animator = GetComponent<Animator>();
+
+        ResetLineRenderer();
+
         GetNextTarget();
     }
 
@@ -62,6 +65,14 @@ public class Turret : MonoBehaviour
         {
             GetNextTarget();
         }
+    }
+
+    private void ResetLineRenderer()
+    {
+        _lineRendererPositions[0] = _shootTransform.position;
+        Vector3 endPoint = _shootTransform.forward * _maxShootDistance;
+        endPoint.y = _shootTransform.position.y;
+        _lineRendererPositions[1] = endPoint;
     }
 
     private void SetLineRendererPoints()
